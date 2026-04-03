@@ -7,6 +7,8 @@ class SchemeRequest(BaseModel):
     occupation: Optional[str] = None
     gender: Optional[str] = None
     state: Optional[str] = None
+    startup_stage: Optional[str] = None
+    startup_recognition: Optional[str] = None
 
 class SchemeResponse(BaseModel):
     scheme_name: str

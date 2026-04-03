@@ -50,8 +50,8 @@
     },
     "benefits": {
       "type": "Direct Income Support",
-      "amount": "₹6000/year",
-      "disbursement": "₹2000 every 4 months",
+      "amount": "\u20b96000/year",
+      "disbursement": "\u20b92000 every 4 months",
       "description": "Financial assistance to small and marginal farmers"
     },
     "documents_required": [
@@ -73,7 +73,7 @@
     },
     "ai_fields": {
       "search_text": "farmer income support agriculture subsidy pm kisan scheme india",
-      "summary": "Provides ₹6000 per year to eligible farmers",
+      "summary": "Provides \u20b96000 per year to eligible farmers",
       "keywords": [
         "farmer",
         "income support",
@@ -133,7 +133,7 @@
     },
     "benefits": {
       "type": "Health Insurance",
-      "amount": "₹5 lakh/year",
+      "amount": "\u20b95 lakh/year",
       "disbursement": "Annual",
       "description": "Cashless health insurance"
     },
@@ -156,7 +156,7 @@
     },
     "ai_fields": {
       "search_text": "health insurance medical family hospital ayushman bharat",
-      "summary": "Provides ₹5 lakh annual medical insurance",
+      "summary": "Provides \u20b95 lakh annual medical insurance",
       "keywords": [
         "health",
         "insurance",
@@ -211,7 +211,7 @@
     },
     "benefits": {
       "type": "Housing Subsidy",
-      "amount": "₹2.5 lakh",
+      "amount": "\u20b92.5 lakh",
       "disbursement": "Installments",
       "description": "Affordable housing assistance"
     },
@@ -295,7 +295,7 @@
     },
     "benefits": {
       "type": "Business Loan",
-      "amount": "Up to ₹10 lakh",
+      "amount": "Up to \u20b910 lakh",
       "disbursement": "Loan based",
       "description": "Provides loans to small businesses"
     },
@@ -318,7 +318,7 @@
     },
     "ai_fields": {
       "search_text": "business loan startup mudra scheme india",
-      "summary": "Loan up to ₹10 lakh for small businesses",
+      "summary": "Loan up to \u20b910 lakh for small businesses",
       "keywords": [
         "loan",
         "business",
@@ -447,7 +447,7 @@
     },
     "benefits": {
       "type": "Working Capital Loan",
-      "amount": "₹10000",
+      "amount": "\u20b910000",
       "disbursement": "Loan",
       "description": "Initial working capital loan for vendors"
     },
@@ -685,7 +685,7 @@
     },
     "benefits": {
       "type": "Business Loan",
-      "amount": "₹10 lakh - ₹1 crore",
+      "amount": "\u20b910 lakh - \u20b91 crore",
       "disbursement": "Loan",
       "description": "Loans for entrepreneurs"
     },
@@ -773,7 +773,7 @@
     },
     "benefits": {
       "type": "Seed Funding",
-      "amount": "Up to ₹50 lakh",
+      "amount": "Up to \u20b950 lakh",
       "disbursement": "Milestone based",
       "description": "Financial support for early-stage startups"
     },
@@ -857,7 +857,7 @@
     },
     "benefits": {
       "type": "Pension",
-      "amount": "₹1000–₹5000/month",
+      "amount": "\u20b91000\u2013\u20b95000/month",
       "disbursement": "Monthly after 60",
       "description": "Guaranteed pension after retirement"
     },
@@ -1003,7 +1003,7 @@
     },
     "benefits": {
       "type": "Accident Insurance",
-      "amount": "₹2 lakh",
+      "amount": "\u20b92 lakh",
       "disbursement": "Claim based",
       "description": "Insurance against accidental death/disability"
     },
@@ -1024,7 +1024,7 @@
     },
     "ai_fields": {
       "search_text": "insurance accident claim pmsby",
-      "summary": "₹2 lakh accident insurance",
+      "summary": "\u20b92 lakh accident insurance",
       "keywords": [
         "insurance",
         "accident"
@@ -1080,7 +1080,7 @@
     },
     "benefits": {
       "type": "Life Insurance",
-      "amount": "₹2 lakh",
+      "amount": "\u20b92 lakh",
       "disbursement": "Claim based",
       "description": "Life insurance cover"
     },
@@ -1100,7 +1100,7 @@
     },
     "ai_fields": {
       "search_text": "life insurance pmjjby",
-      "summary": "₹2 lakh life insurance",
+      "summary": "\u20b92 lakh life insurance",
       "keywords": [
         "life insurance"
       ]
@@ -1147,7 +1147,7 @@
     },
     "benefits": {
       "type": "Monthly Pension",
-      "amount": "₹1000/month",
+      "amount": "\u20b91000/month",
       "disbursement": "Monthly",
       "description": "Financial support for widows"
     },
@@ -1167,7 +1167,7 @@
       ]
     },
     "ai_fields": {
-      "search_text": "widow महिला pension support",
+      "search_text": "widow \u092e\u0939\u093f\u0932\u093e pension support",
       "summary": "Monthly pension for widows",
       "keywords": [
         "widow",
@@ -1213,7 +1213,7 @@
     },
     "benefits": {
       "type": "Monthly Pension",
-      "amount": "₹1000/month",
+      "amount": "\u20b91000/month",
       "disbursement": "Monthly",
       "description": "Pension for senior citizens"
     },
@@ -1467,9 +1467,7 @@
       "active": true,
       "last_verified": "2026-03-31"
     }
-  }
-,
-
+  },
   {
     "scheme_id": "SCH025",
     "scheme_name": "PM Vishwakarma Yojana",
@@ -1527,7 +1525,7 @@
     },
     "benefits": {
       "type": "Skill & Credit Support",
-      "amount": "Up to ₹3 lakh loan + ₹15,000 toolkit",
+      "amount": "Up to \u20b93 lakh loan + \u20b915,000 toolkit",
       "disbursement": "Milestone based",
       "description": "Collateral-free credit, skill training, and toolkit incentive for traditional artisans."
     },
@@ -1619,7 +1617,7 @@
     },
     "benefits": {
       "type": "Direct Benefit Transfer",
-      "amount": "₹5,000",
+      "amount": "\u20b95,000",
       "disbursement": "Three installments",
       "description": "Cash incentive for pregnant women and lactating mothers for first live birth."
     },
@@ -1642,7 +1640,7 @@
     },
     "ai_fields": {
       "search_text": "maternity pregnancy women child health benefit pmmvy",
-      "summary": "₹5,000 cash incentive for pregnant women and lactating mothers",
+      "summary": "\u20b95,000 cash incentive for pregnant women and lactating mothers",
       "keywords": [
         "maternity",
         "pregnant",
@@ -1808,7 +1806,7 @@
     },
     "benefits": {
       "type": "Pension",
-      "amount": "₹3,000/month",
+      "amount": "\u20b93,000/month",
       "disbursement": "Monthly after 60",
       "description": "Assured monthly pension for unorganized sector workers post-retirement."
     },
@@ -1830,7 +1828,7 @@
     },
     "ai_fields": {
       "search_text": "labor pension unorganized worker monthly income maandhan",
-      "summary": "₹3,000 monthly pension for unorganized workers after age 60",
+      "summary": "\u20b93,000 monthly pension for unorganized workers after age 60",
       "keywords": [
         "pension",
         "labor",
@@ -1890,7 +1888,7 @@
         }
       ],
       "exceptions": [
-        "For manufacturing projects above ₹10 lakh and service projects above ₹5 lakh, passing VIII standard is mandatory.",
+        "For manufacturing projects above \u20b910 lakh and service projects above \u20b95 lakh, passing VIII standard is mandatory.",
         "Existing units or units already availing other govt subsidies are ineligible."
       ]
     },
@@ -1935,8 +1933,7 @@
       "active": true,
       "last_verified": "2026-03-31"
     }
-  }
-  ,
+  },
   {
     "scheme_id": "SCH030",
     "scheme_name": "Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY)",
@@ -2085,7 +2082,7 @@
     },
     "benefits": {
       "type": "Short-Term Credit",
-      "amount": "Up to ₹3 Lakh",
+      "amount": "Up to \u20b93 Lakh",
       "disbursement": "Credit Limit",
       "description": "Adequate and timely credit support from the banking system under a single window for agricultural needs."
     },
@@ -2109,7 +2106,7 @@
     },
     "ai_fields": {
       "search_text": "farmer loan credit agriculture seeds kcc kisan",
-      "summary": "Short-term agricultural credit limit up to ₹3 Lakh for farmers",
+      "summary": "Short-term agricultural credit limit up to \u20b93 Lakh for farmers",
       "keywords": [
         "farmer",
         "credit",
@@ -2166,7 +2163,7 @@
         }
       ],
       "exceptions": [
-        "Overdraft facility up to ₹10,000 available only to one account per household, preferably lady of the house"
+        "Overdraft facility up to \u20b910,000 available only to one account per household, preferably lady of the house"
       ]
     },
     "benefits": {
@@ -2203,7 +2200,7 @@
     "scoring": {
       "priority_score": 93,
       "popularity_score": 96,
-      "relevance_weight": 0.90
+      "relevance_weight": 0.9
     },
     "validity": {
       "active": true,
@@ -2262,7 +2259,7 @@
     },
     "benefits": {
       "type": "Monthly Pension",
-      "amount": "₹300/month (Central share)",
+      "amount": "\u20b9300/month (Central share)",
       "disbursement": "Monthly",
       "description": "Financial assistance to individuals with severe or multiple disabilities from BPL families."
     },
@@ -2361,7 +2358,7 @@
     },
     "benefits": {
       "type": "Financial Assistance",
-      "amount": "Up to ₹15,000",
+      "amount": "Up to \u20b915,000",
       "disbursement": "Six phases/installments",
       "description": "Conditional cash transfer across 6 stages: from birth, vaccination, school admission, up to degree/diploma."
     },
@@ -2384,7 +2381,7 @@
     },
     "ai_fields": {
       "search_text": "girl child up state scheme kanya sumangala education birth",
-      "summary": "Financial support up to ₹15,000 for girl child across six milestones in UP",
+      "summary": "Financial support up to \u20b915,000 for girl child across six milestones in UP",
       "keywords": [
         "girl child",
         "education",
@@ -2400,8 +2397,7 @@
       "active": true,
       "last_verified": "2026-03-31"
     }
-  }
-,
+  },
   {
     "scheme_id": "SCH035",
     "scheme_name": "e-Shram Portal Registration",
@@ -2458,9 +2454,9 @@
     },
     "benefits": {
       "type": "Accident Insurance & ID",
-      "amount": "₹2 Lakh",
+      "amount": "\u20b92 Lakh",
       "disbursement": "Claim based",
-      "description": "Provides Universal Account Number (UAN) card and ₹2 lakh accidental insurance cover under PMSBY."
+      "description": "Provides Universal Account Number (UAN) card and \u20b92 lakh accidental insurance cover under PMSBY."
     },
     "documents_required": [
       "Aadhaar Card",
@@ -2553,7 +2549,7 @@
     },
     "benefits": {
       "type": "Pension",
-      "amount": "₹3,000/month",
+      "amount": "\u20b93,000/month",
       "disbursement": "Monthly after 60",
       "description": "Assured monthly pension for small and marginal farmers post 60 years of age."
     },
@@ -2576,7 +2572,7 @@
     },
     "ai_fields": {
       "search_text": "farmer pension retirement agriculture monthly income pm kmy",
-      "summary": "₹3,000 monthly pension for small and marginal farmers after age 60",
+      "summary": "\u20b93,000 monthly pension for small and marginal farmers after age 60",
       "keywords": [
         "farmer",
         "pension",
@@ -2638,7 +2634,7 @@
     },
     "benefits": {
       "type": "Construction Subsidy",
-      "amount": "₹12,000",
+      "amount": "\u20b912,000",
       "disbursement": "Installments",
       "description": "Financial incentive for the construction of individual household latrines in rural areas."
     },
@@ -2662,7 +2658,7 @@
     },
     "ai_fields": {
       "search_text": "toilet subsidy sanitation latrine village sbm swachh bharat",
-      "summary": "₹12,000 financial assistance for building a toilet in rural households",
+      "summary": "\u20b912,000 financial assistance for building a toilet in rural households",
       "keywords": [
         "toilet",
         "sanitation",
@@ -2813,7 +2809,7 @@
     },
     "benefits": {
       "type": "High Interest Savings",
-      "amount": "Interest based (Up to ₹30 Lakh deposit)",
+      "amount": "Interest based (Up to \u20b930 Lakh deposit)",
       "disbursement": "Quarterly Interest",
       "description": "Government-backed savings instrument offering high security and regular income to senior citizens."
     },
@@ -2853,8 +2849,7 @@
       "active": true,
       "last_verified": "2026-03-31"
     }
-  }
-,
+  },
   {
     "scheme_id": "SCH040",
     "scheme_name": "Mahila Samman Savings Certificate",
@@ -2896,7 +2891,7 @@
         }
       ],
       "exceptions": [
-        "Maximum deposit limit is ₹2 Lakh per individual",
+        "Maximum deposit limit is \u20b92 Lakh per individual",
         "Minor girls can open an account through a natural or legal guardian"
       ]
     },
@@ -3262,6 +3257,300 @@
     "validity": {
       "active": true,
       "last_verified": "2026-03-31"
+    }
+  },
+  {
+    "scheme_id": "SCH_STARTUP_UP_001",
+    "scheme_name": "UP Startup Policy Seed & Prototype Grant",
+    "source": "https://startup.up.gov.in",
+    "ministry": "Department of IT & Electronics, Government of Uttar Pradesh",
+    "government_level": "State",
+    "scheme_category": [
+      "Startup",
+      "Innovation",
+      "Entrepreneurship"
+    ],
+    "target_beneficiary": [
+      "Students",
+      "Entrepreneurs"
+    ],
+    "eligibility": {
+      "structured": {
+        "age_min": 18,
+        "income_max": null,
+        "occupation": [
+          "student",
+          "entrepreneur"
+        ],
+        "startup_stage": [
+          "idea",
+          "prototype",
+          "early-stage"
+        ],
+        "state": [
+          "Uttar Pradesh"
+        ],
+        "gender": [
+          "All"
+        ]
+      },
+      "logic_rules": [
+        {
+          "field": "state",
+          "operator": "==",
+          "value": "Uttar Pradesh"
+        }
+      ],
+      "exceptions": [
+        "Duplicate funding not allowed"
+      ]
+    },
+    "benefits": {
+      "type": "Grant",
+      "amount": "\u20b91 lakh",
+      "disbursement": "Milestone-based",
+      "description": "Funding for prototype development"
+    },
+    "documents_required": [
+      "Aadhaar Card",
+      "Pitch Deck",
+      "Bank Details"
+    ],
+    "application": {
+      "mode": [
+        "Online"
+      ],
+      "link": "https://startup.up.gov.in",
+      "steps": [
+        "Register",
+        "Apply",
+        "Evaluation",
+        "Funding"
+      ]
+    },
+    "ai_fields": {
+      "search_text": "up startup grant prototype",
+      "summary": "\u20b91 lakh prototype funding",
+      "keywords": [
+        "startup",
+        "UP"
+      ]
+    },
+    "scoring": {
+      "priority_score": 95,
+      "popularity_score": 85,
+      "relevance_weight": 0.92
+    },
+    "validity": {
+      "active": true,
+      "last_verified": "2025-02-15"
+    }
+  },
+  {
+    "scheme_id": "SCH_STARTUP_INDIA_002",
+    "scheme_name": "Startup India Seed Fund Scheme (SISFS)",
+    "source": "https://seedfund.startupindia.gov.in",
+    "ministry": "DPIIT",
+    "government_level": "Central",
+    "scheme_category": [
+      "Startup",
+      "Innovation"
+    ],
+    "target_beneficiary": [
+      "Startups"
+    ],
+    "eligibility": {
+      "structured": {
+        "age_min": 18,
+        "income_max": null,
+        "occupation": [
+          "entrepreneur"
+        ],
+        "startup_stage": [
+          "idea",
+          "prototype",
+          "early-stage"
+        ],
+        "startup_recognition": "DPIIT Registered",
+        "state": [
+          "All"
+        ],
+        "gender": [
+          "All"
+        ]
+      },
+      "logic_rules": [
+        {
+          "field": "startup_recognition",
+          "operator": "==",
+          "value": "DPIIT Registered"
+        }
+      ],
+      "exceptions": [
+        "Already funded startups excluded"
+      ]
+    },
+    "benefits": {
+      "type": "Grant",
+      "amount": "Up to \u20b950 lakh",
+      "disbursement": "Milestone-based",
+      "description": "Funding for prototype and scaling"
+    },
+    "documents_required": [
+      "Startup Certificate",
+      "Pitch Deck",
+      "Business Plan"
+    ],
+    "application": {
+      "mode": [
+        "Online"
+      ],
+      "link": "https://seedfund.startupindia.gov.in",
+      "steps": [
+        "Register",
+        "Apply",
+        "Evaluation",
+        "Funding"
+      ]
+    },
+    "ai_fields": {
+      "search_text": "startup india seed fund",
+      "summary": "Up to \u20b950 lakh funding",
+      "keywords": [
+        "startup",
+        "seed fund"
+      ]
+    },
+    "scoring": {
+      "priority_score": 98,
+      "popularity_score": 95,
+      "relevance_weight": 0.95
+    },
+    "validity": {
+      "active": true,
+      "last_verified": "2025-03-01"
+    }
+  },
+  {
+    "scheme_id": "SCH_STARTUP_AIM_003",
+    "scheme_name": "Atal Innovation Mission",
+    "source": "https://aim.gov.in",
+    "ministry": "NITI Aayog",
+    "government_level": "Central",
+    "scheme_category": [
+      "Innovation"
+    ],
+    "target_beneficiary": [
+      "Students",
+      "Innovators"
+    ],
+    "eligibility": {
+      "structured": {
+        "age_min": 15,
+        "income_max": null,
+        "startup_stage": [
+          "idea",
+          "prototype"
+        ],
+        "state": [
+          "All"
+        ],
+        "gender": [
+          "All"
+        ]
+      },
+      "logic_rules": [],
+      "exceptions": []
+    },
+    "benefits": {
+      "type": "Grant",
+      "amount": "Up to \u20b910 lakh",
+      "disbursement": "Project-based",
+      "description": "Supports innovation and student ideas"
+    },
+    "documents_required": [
+      "Project Proposal"
+    ],
+    "application": {
+      "mode": [
+        "Online"
+      ],
+      "link": "https://aim.gov.in",
+      "steps": [
+        "Apply",
+        "Evaluation"
+      ]
+    },
+    "ai_fields": {
+      "search_text": "atal innovation mission grant",
+      "summary": "Innovation funding support",
+      "keywords": [
+        "innovation"
+      ]
+    },
+    "scoring": {
+      "priority_score": 90,
+      "popularity_score": 88,
+      "relevance_weight": 0.9
+    },
+    "validity": {
+      "active": true,
+      "last_verified": "2025-02-10"
+    }
+  },
+  {
+    "scheme_id": "SCH_STARTUP_INDIA_005",
+    "scheme_name": "Credit Guarantee Scheme for Startups",
+    "source": "https://startupindia.gov.in",
+    "ministry": "DPIIT",
+    "government_level": "Central",
+    "scheme_category": [
+      "Finance",
+      "Loan"
+    ],
+    "target_beneficiary": [
+      "Startups"
+    ],
+    "eligibility": {
+      "structured": {
+        "startup_recognition": "DPIIT Registered"
+      },
+      "logic_rules": [],
+      "exceptions": []
+    },
+    "benefits": {
+      "type": "Loan Guarantee",
+      "amount": "Up to \u20b910 crore",
+      "disbursement": "Bank",
+      "description": "Collateral-free loan support"
+    },
+    "documents_required": [
+      "Business Plan"
+    ],
+    "application": {
+      "mode": [
+        "Bank"
+      ],
+      "link": "https://startupindia.gov.in",
+      "steps": [
+        "Apply loan"
+      ]
+    },
+    "ai_fields": {
+      "search_text": "startup loan guarantee india",
+      "summary": "Collateral-free loans",
+      "keywords": [
+        "loan"
+      ]
+    },
+    "scoring": {
+      "priority_score": 92,
+      "popularity_score": 87,
+      "relevance_weight": 0.91
+    },
+    "validity": {
+      "active": true,
+      "last_verified": "2025-03-05"
     }
   }
 ]

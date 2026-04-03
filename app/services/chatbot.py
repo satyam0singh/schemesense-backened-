@@ -135,7 +135,7 @@ class ChatbotEngine:
         # Default RAG search
         search_results = rag_engine.search(query, top_k=2)
         if not search_results:
-            return {"response": "I'm sorry, I couldn't find any schemes related to your query. Could you try rephrasing? For example, ask about 'schemes for farmers'.", "schemes": []}
+            return {"response": "I'm sorry, I couldn't find any schemes related to your query. Could you try rephrasing? For example, ask about 'schemes for farmers' or 'startup grants'.", "schemes": []}
             
         found_schemes = []
         for res in search_results:
