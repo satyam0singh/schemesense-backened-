@@ -1,6 +1,6 @@
 from fastapi import APIRouter, UploadFile, File, HTTPException
 from typing import List
-from app.models import SchemeRequest, SchemeResponse, ChatRequest, ChatResponse
+from app.models import SchemeRequest, SchemeResponse, ChatRequest, ChatResponse, OfficeResponse
 from app.services.recommendation import recommendation_engine
 
 # Need these for lazy loading
