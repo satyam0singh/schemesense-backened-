@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Optional, List, Any
+from typing import Optional, List, Any, Dict
 
 class SchemeRequest(BaseModel):
     age: Optional[int] = None
@@ -19,3 +19,11 @@ class SchemeResponse(BaseModel):
     documents_required: List[str]
     match_type: str
     priority_tag: str
+
+class ChatRequest(BaseModel):
+    query: str
+    user_profile: Optional[Dict[str, Any]] = None
+
+class ChatResponse(BaseModel):
+    response: str
+    schemes: Optional[List[Dict[str, Any]]] = None

@@ -1,11 +1,12 @@
 from fastapi import APIRouter
 from typing import List
-from app.models import SchemeRequest, SchemeResponse
+from app.models import SchemeRequest, SchemeResponse, ChatRequest, ChatResponse
 from app.services.recommendation import recommendation_engine
 
 # Need these for lazy loading
 from app.utils.loader import loader
 from app.services.rag import rag_engine
+from app.services.chatbot import chatbot_engine
 
 router = APIRouter()
 
@@ -40,3 +41,16 @@ def get_schemes(user_req: SchemeRequest):
     results = recommendation_engine.get_recommendations(user_data)
     
     return results
+
+@router.post("/chat", response_model=ChatResponse)
+def get_chat(chat_req: ChatRequest):
+    """
+    Simulates an intelligent AI assistant.
+    Takes a query string and optional user_profile.
+    """
+    # Lazy load the ML and FAISS data only when the first request hits
+    initialize_if_needed()
+
+    user_profile = chat_req.user_profile if chat_req.user_profile else None
+    
+    return chatbot_engine.chat_pipeline(chat_req.query, user_profile)
