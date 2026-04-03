@@ -1,0 +1,8 @@
+﻿
+--- TESTING GET ALL STARTUPS ---
+Retrieved 5 startup schemes.
+- SCH011: Startup India Seed Fund Scheme
+- SCH_STARTUP_UP_001: UP Startup Policy Seed & Prototype Grant
+- SCH_STARTUP_INDIA_002: Startup India Seed Fund Scheme (SISFS)
+- SCH_STARTUP_AIM_003: Atal Innovation Mission
+- SCH_STARTUP_INDIA_005: Credit Guarantee Scheme for Startups

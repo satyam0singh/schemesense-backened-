@@ -55,3 +55,21 @@ def get_chat(chat_req: ChatRequest):
     scheme_context = chat_req.scheme if chat_req.scheme else None
     
     return chatbot_engine.chat_pipeline(chat_req.query, scheme_context, user_profile)
+
+@router.get("/startups")
+def get_all_startups():
+    """
+    Returns all startup-specific schemes without any eligibility filtering.
+    Useful for a dedicated 'Startup Discovery' tab in the app.
+    """
+    initialize_if_needed()
+    all_schemes = loader.schemes
+    
+    # Filter for schemes where scheme_category contains "Startup" OR ID starts with SCH_STARTUP
+    startup_schemes = [
+        s for s in all_schemes 
+        if any(cat.lower() == "startup" for cat in s.get("scheme_category", [])) or 
+           str(s.get("scheme_id", "")).startswith("SCH_STARTUP")
+    ]
+    
+    return startup_schemes
