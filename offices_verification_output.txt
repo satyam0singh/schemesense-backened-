@@ -1,0 +1,19 @@
+﻿
+--- TESTING NEAREST OFFICES AT (28.6692, 77.4538) ---
+Nearest 5 offices found:
+- CSC Center Ghaziabad (CSC) | Distance: 0.0km | Address: Navyug Market, Ghaziabad
+- UP IT Solutions Hub (CSC) | Distance: 16.4km | Address: Sector 62, Noida
+- BDO Office Loni (BDO) | Distance: 20.33km | Address: Loni Road, Ghaziabad
+- Aadhar Seva Kendra Delhi (CSC) | Distance: 26.88km | Address: Connaught Place, New Delhi
+- BDO Office Mehrauli (BDO) | Distance: 34.37km | Address: Mehrauli, Delhi
+
+--- TESTING NEAREST OFFICES AT (26.8467, 80.9462) ---
+Nearest 5 offices found:
+- CSC Center Lucknow (CSC) | Distance: 0.0km | Address: Hazratganj, Lucknow
+- BDO Office Mohanlalganj (BDO) | Distance: 18.86km | Address: Mohanlalganj, UP
+- UP IT Solutions Hub (CSC) | Distance: 436.89km | Address: Sector 62, Noida
+- CSC Center Ghaziabad (CSC) | Distance: 437.27km | Address: Navyug Market, Ghaziabad
+- BDO Office Mehrauli (BDO) | Distance: 457.1km | Address: Mehrauli, Delhi
+
+--- TESTING NEAREST OFFICES AT (100.0, 200.0) ---
+ERROR: 400 - {"detail":"Invalid coordinates. Lat must be -90 to 90, Lng -180 to 180."}
