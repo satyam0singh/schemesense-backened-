@@ -22,29 +22,6 @@ class ChatbotEngine:
             if not user_query:
                 return {"response": "Hi! I'm your AI Scheme Assistant. How can I help you today?", "schemes": []}
 
-            # 🛠️ JURY MODE: Platform FAQ Layer (Hardcoded Expert Answers)
-            query_l = user_query.lower()
-            PLATFORM_FAQ = {
-                "what is schemesense": "SchemeSense is an AI-powered platform designed to provide citizens and entrepreneurs with personalized, instant access to government schemes and startup grants. It uses fuzzy-eligibility matching and context-aware chat to bridge the knowledge gap.",
-                "who built this": "SchemeSense was built by a dedicated team of engineers for the Hacknovate Hackathon. Our goal was to create a production-grade, winner-level solution for simplifying government scheme discovery.",
-                "how it works": "Our AI engine uses a three-tier pipeline: (1) Discovery using keyword-based retrieval, (2) Eligibility using fuzzy logic, and (3) Chat for specific context-aware queries about benefits and doc requirements.",
-                "how to apply": "To apply, simply find your desired scheme on our platform, verify your eligibility using the 'Check Eligibility' button, and follow the official application link provided in the scheme details.",
-                "document": "Most Indian government schemes require at least an Aadhaar Card, Proof of Residence (Voter ID/Domicile), and Income Certificate. For startups, you typically need a pitch deck and registration documents.",
-                "aadhaar": "Yes, Aadhaar is mandatory for almost all government schemes to ensure direct benefit transfer (DBT) and prevent duplicate claims.",
-                "fees": "SchemeSense and most government applications are completely free. Be cautious of middlemen or third-party sites asking for money to process your application.",
-                "women": "We support many schemes for women, including Sukanya Samriddhi Yojana, Stand-Up India, and specialized grants for women entrepreneurs under Startup India.",
-                "farmers": "Farmers can find numerous programs like PM-KISAN, Fasal Bima Yojana, and KCC (Kisan Credit Card) by searching in the 'Agriculture' category.",
-                "students": "Students have access to thousands of scholarships like NSP (National Scholarship Portal) and PM-USP, as well as education loans and innovation grants like AIM.",
-                "multiple": "Yes, you can apply for multiple schemes as long as you meet the specific eligibility for each. You must ensure there is no duplication of the same benefit (e.g., getting two house subsidies).",
-                "purpose": "The purpose is to simplify access to welfare and innovation programs, ensuring that no eligible citizen misses out due to complex documentation.",
-                "contact": "You can reach the development team via our platform dashboard or GitHub repository for any technical queries.",
-                "future": "We plan to expand our dataset, integrate voice commands in vernacular languages, and add a direct portal for application tracking in future versions."
-            }
-
-            for trigger, answer in PLATFORM_FAQ.items():
-                if trigger in query_l:
-                    return {"response": answer, "schemes": []}
-
             if scheme and isinstance(scheme, dict):
                 # 🎯 Context-Aware Mode (Priority)
                 return self.scheme_chat_agent(user_query, scheme, user_profile)
@@ -138,14 +115,15 @@ class ChatbotEngine:
     def general_chat_agent(self, query: str, user_profile: dict = None):
         """
         Fallback logic for when no specific scheme is in focus.
-        Uses RAG to find relevant schemes with strict confidence thresholds (Jury Mode).
+        Uses RAG to find relevant schemes.
         """
         query_l = query.lower()
         
-        # 🟢 A. Direct Intent for Recommendations
-        if any(w in query_l for w in ["suggest", "recommend", "find", "startup"]):
+        # Basic intent for general mode
+        if "suggest" in query_l or "recommend" in query_l or "find" in query_l:
             if user_profile and isinstance(user_profile, dict) and any(user_profile.values()):
                 results = recommendation_engine.get_recommendations(user_profile)
+                # Filter out fallback
                 valid = [r for r in results if r.scheme_name != "No Match Found"]
                 if valid:
                     top = valid[0]
@@ -153,22 +131,14 @@ class ChatbotEngine:
                         "response": f"I've found some great schemes for you! My top recommendation is **{top.scheme_name}**. It provides {top.benefits}. Would you like to know more about it?",
                         "schemes": [s.model_dump() for s in valid]
                     }
-
-        # 🟠 B. General Search with Hallucination Guard
-        search_results = rag_engine.search(query, top_k=3)
-        
-        # JURY MODE: Only display results if they have a decent keyword match
-        # Distance of 0.5 means a score of at least 1 keyword. Distance of 1.0 means score of 0.
-        high_confidence = [r for r in search_results if r["distance"] < 0.6] 
-        
-        if not high_confidence:
-             return {
-                "response": "I apologize, but I don't have verified data on that specific query yet. My current knowledge base is focused on Indian government welfare schemes and startup grants. Please try asking about things like 'business loans' or 'scholarships'!",
-                "schemes": []
-            }
+            
+        # Default RAG search
+        search_results = rag_engine.search(query, top_k=2)
+        if not search_results:
+            return {"response": "I'm sorry, I couldn't find any schemes related to your query. Could you try rephrasing? For example, ask about 'schemes for farmers' or 'startup grants'.", "schemes": []}
             
         found_schemes = []
-        for res in high_confidence:
+        for res in search_results:
             s_data = next((s for s in loader.schemes if s.get("scheme_id") == res["id"]), None)
             if s_data: found_schemes.append(s_data)
             
@@ -176,14 +146,11 @@ class ChatbotEngine:
             s1 = found_schemes[0]
             name1 = s1.get("scheme_name")
             return {
-                "response": f"I found some verified information about **{name1}** that might be relevant to you. Would you like to check the full details or your eligibility?",
+                "response": f"I found some information about **{name1}** that might interest you. Would you like to check if you're eligible for it?",
                 "schemes": found_schemes
             }
             
-        return {
-            "response": "I'm sorry, I couldn't find a high-confidence match for that right now. Please try rephrasing your question or search for a specific category like 'Education' or 'Finance'.",
-            "schemes": []
-        }
+        return {"response": "I'm having trouble retrieving details right now. Please try again.", "schemes": []}
 
     def suggest_related_schemes(self, current_scheme: dict, all_schemes: list):
         """
