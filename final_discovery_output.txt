@@ -1,0 +1,8 @@
+﻿
+--- TESTING STARTUP DISCOVERY (NON-MATCHING PROFILE) ---
+Matched 2 schemes.
+FOUND: UP Startup Policy Seed & Prototype Grant
+- Match Type: Ecosystem Match
+- Reason: Startup Opportunity: This scheme is open for discovery. Did not meet required thresholds. Failed state (== Uttar Pradesh)
+FOUND: Startup India Seed Fund Scheme (Full)
+FOUND: UP Startup Policy Seed & Prototype Grant (Ecosystem Match)

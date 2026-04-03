@@ -42,11 +42,19 @@ class RecommendationEngine:
                 continue
                 
             # 3. Fuzzy Eligibility Filter
-            is_eligible, confidence_score, match_reason, match_type = eligibility_engine.evaluate(user_data, scheme)
+            is_el, conf, m_reason, m_type = eligibility_engine.evaluate(user_data, scheme)
             
-            # Discard anything < 50% match
-            if not is_eligible:
+            # 🚀 SPECIAL CASE: Startups are never filtered out (Discovery Mode)
+            is_startup = any(c.lower() == "startup" for c in scheme.get("scheme_category", []))
+            
+            if not is_el and not is_startup:
                 continue
+
+            # Update match type for non-eligible startups to "Discovery"
+            if is_startup and not is_el:
+                m_type = "Ecosystem Match"
+                conf = max(conf, 0.5) # Minimum confidence floor for discovery
+                m_reason = "Startup Opportunity: This scheme is open for discovery. " + m_reason
                 
             # 4. Final Scoring Equation
             # FAISS L2 Distance (lower = better semantic similarity). 
@@ -59,7 +67,7 @@ class RecommendationEngine:
             
             # The Final Intelligence Ranking Math
             final_score = (
-                0.5 * confidence_score +
+                0.5 * conf +
                 0.3 * priority_score +
                 0.2 * semantic_score
             )
@@ -72,10 +80,10 @@ class RecommendationEngine:
             
             recommended.append({
                 "scheme": scheme,
-                "confidence_score": confidence_score, # Visual raw score
+                "confidence_score": conf, # Visual raw score
                 "final_score": final_score, # Sorting factor
-                "match_reason": match_reason,
-                "match_type": match_type,
+                "match_reason": m_reason,
+                "match_type": m_type,
                 "category": cat_str,
                 "priority_tag": priority_tag,
                 "documents_required": scheme.get("documents_required", [])
@@ -103,7 +111,7 @@ class RecommendationEngine:
 
             response_obj = SchemeResponse(
                 scheme_name=scheme.get("scheme_name", "Unknown Scheme"),
-                eligible=True,
+                eligible=True, # Ensuring it's visible in UI
                 confidence_score=rec["confidence_score"],
                 match_reason=rec["match_reason"],
                 benefits=benefits_text,
